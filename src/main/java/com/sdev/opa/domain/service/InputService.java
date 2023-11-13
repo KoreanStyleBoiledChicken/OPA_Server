@@ -14,7 +14,7 @@ public class InputService {
     private final DenyRepository denyRepository;
     public void inputDeny(String response) throws JsonProcessingException {
         ObjectMapper objectMapper = new ObjectMapper();
-        Deny deny = objectMapper.readValue(response, Deny.class);
+        DenyEntity deny = objectMapper.readValue(response, DenyEntity.class);
         denyRepository.save(deny);
     }
 }

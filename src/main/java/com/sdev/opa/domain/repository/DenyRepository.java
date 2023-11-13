@@ -7,6 +7,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DenyRepository extends MongoRepository<Deny, String> {
-    public Deny findAllById(ObjectId id);
+public interface DenyRepository extends MongoRepository<DenyEntity, String> {
+    public DenyEntity findAllById(ObjectId id);
 }

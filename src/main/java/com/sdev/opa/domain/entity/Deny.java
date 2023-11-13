@@ -16,13 +16,9 @@ import java.util.List;
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-@Document(collection = "deny")
 public class Deny {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private ObjectId id;
     private String alertMessage;
-    private List<AlertObject> alertObject;
+    private AlertObject alertObject;
     private Long alertScore;
     private String ruleId;
 }
