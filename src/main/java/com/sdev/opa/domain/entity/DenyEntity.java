@@ -2,7 +2,7 @@ package com.sdev.opa.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.sdev.opa.config.BaseTimeEntity;
+import com.sdev.opa.common.BaseTimeEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
