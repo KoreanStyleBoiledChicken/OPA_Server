@@ -17,7 +17,7 @@ public class OutputService {
     public String outputDeny() throws JsonProcessingException {
         //collection에서 id 찾아오기
         ObjectId objId = new ObjectId("655235590c5ffd0c9d3ec579");
-        Deny findDeny = denyRepository.findAllById(objId);
+        DenyEntity findDeny = denyRepository.findAllById(objId);
 
         try{
             ObjectMapper objectMapper = new ObjectMapper();

@@ -1,12 +1,19 @@
 package com.sdev.opa.domain.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 
 public class RelatedObjects {
+    @JsonProperty("apiVersion")
     private String apiVersion;
+    @JsonProperty("kind")
     private String kind;
-    private List<Metadata> metadata;
+    @JsonProperty("metadata")
+    private Metadata metadata;
+    @JsonProperty("rules")
     private List<Rules> rules;
-    private List<RoleRef> roleRef;
+    @JsonProperty("roleRef")
+    private RoleRef roleRef;
+    @JsonProperty("subjects")
     private List<Subjects> subjects;
 }
