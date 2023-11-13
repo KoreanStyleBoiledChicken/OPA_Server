@@ -1,4 +1,4 @@
-package com.sdev.opa.config;
+package com.sdev.opa.common;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
